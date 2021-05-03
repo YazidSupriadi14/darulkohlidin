@@ -58,7 +58,7 @@
                           <option value="">Pilih Status Kelulusan</option>
                               
                               <option value="lulus">Lulus</option>
-                              <option value="tidak lulus">Lulus</option>
+                              <option value="tidak lulus">Tidak Lulus</option>
 
                           </select>
                       

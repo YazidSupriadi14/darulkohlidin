@@ -12,11 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 Auth::routes();
 
+    
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/sma/index', 'SmaController@index');
@@ -30,3 +31,14 @@ Route::get('/sma/siswa/edit/{id}', 'SmaController@edit');
 Route::put('/sma/siswa/update/{id}', 'SmaController@update');
 Route::delete('/sma/siswa/delete/{id}', 'SmaController@delete');
 Route::delete('/sma/siswa/detail/mapel/delete/{id}','SmaController@mapeldelete');
+
+//user 
+
+Route::get('/admin/user','UserController@index');
+Route::delete('/admin/user/delete/{id}','UserController@delete');
+Route::get('/admin/user/role/{id}','UserController@makeadmin');
+
+//depan
+Route::get('/sma/ceklulus', 'SiswaController@ceklulus');
+Route::post('/sma/login','SiswaController@login')->name('smalogin');
+Route::get('/sma/detaillulus/{id}', 'SiswaController@detaillulus');

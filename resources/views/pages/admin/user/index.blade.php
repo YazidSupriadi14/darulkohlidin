@@ -31,11 +31,11 @@
       <td>{{$item->name}}</td>
       <td>{{$item->email}}</td>
       
-      <td>{{$item->rules}}</td>
+      <td>{{$item->role}}</td>
       <td>@if($item->rules == 'asdos')
-            <a href="{{url('admin/user/rules/'.$item->id)}}" class="btn btn-primary btn-sm">Make admin</a>
+            <a href="{{url('admin/user/role/'.$item->id)}}" class="btn btn-primary btn-sm">Make admin</a>
           @else
-            <a href="{{url('admin/user/rules/'.$item->id)}}" class="btn btn-danger btn-sm ">Make other Rules</a>
+            <a href="{{url('admin/user/role/'.$item->id)}}" class="btn btn-danger btn-sm ">Make other Rules</a>
          @endif
       </td>
       <td>

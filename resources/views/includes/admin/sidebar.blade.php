@@ -27,6 +27,12 @@
           <span>Info Kelulusan SMA</span></a>
       </li>
      
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url('admin/user')}}">
+          <i class="fas fa-fw fa-user"></i>
+          <span>User Control</span></a>
+      </li>
+     
 
 
 

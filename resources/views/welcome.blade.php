@@ -26,7 +26,7 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mr-3">
-                  <a class="nav-link" href="/login">Info Kelulusan</a>
+                  <a class="nav-link" href="/sma/ceklulus">Info Kelulusan</a>
                 </li>
               
               </ul>
@@ -91,9 +91,21 @@
       <section id="footer">
          <div class="container">
             <div class="row align-items-center">
-                <div class="col">
-                    <p class="text-center">Copyright 2020</p>
+                <div class="col-3">
+                    <p class="text-center" style="font-size:14px">YAYASAN PENDIDIKAN PONDOK PESANTREN DARUL KHOLIDIN
+Jln. Kp. Sasak RT 03 RW 08 Desa Tegal, Kec. Kemang, Kab. Bogor, Jawa Barat 16310</p>
             
+                </div>
+                <div class="col-3">
+                    
+                </div>
+                
+                <div class="col-3">
+                    
+                </div>
+                <div class="col-3">
+                <p style="font-size:14px">No Telpon :</p>
+                <p style="font-size:14px"> Email:</p>
                 </div>
             </div>
          </div>
