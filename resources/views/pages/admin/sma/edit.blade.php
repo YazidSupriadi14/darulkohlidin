@@ -49,6 +49,20 @@
                   <label>Tanggal Lahir</label>
                   <input type="date" class="form-control" name="tgl_lahir"  value="{{$siswa->tgl_lahir}}">
                 </div>
+                <div class="form-group">
+                     
+                     <label for="slug">Jenis Kelamin</label>
+                       <select name="gender" class="form-control">
+                     
+                       
+                       <option value="">Pilih Jenis Kelamin</option>
+                           
+                           <option value="L">Laki-Laki</option>
+                           <option value="P">Perempuan</option>
+
+                       </select>
+                   
+                   </div>
 
                 <div class="form-group">
                      

@@ -22,6 +22,19 @@
                                     <td class="bg-success text-white">NIS: </td>
                                     <td>{{$siswa->nis}}</td>
                                 </tr>
+                                
+                                <tr>
+                                    <td class="bg-success text-white">NIS: </td>
+                                    @if($siswa->gender == 'L')
+                                    <td>Laki Laki</td>
+                                    @elseif($siswa->gender == 'P')
+                                    <td>Perempuan</td>
+                                    @else
+                                    
+                                    @endif
+
+                                    
+                                </tr>
                                 <tr>
                                     <td class="bg-success text-white">NO SKL: </td>
                                     <td>{{$siswa->noskl}}</td>
