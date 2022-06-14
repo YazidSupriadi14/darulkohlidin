@@ -48,7 +48,21 @@
                   <label>Tanggal Lahir</label>
                   <input type="date" class="form-control" name="tgl_lahir" >
                 </div>
-                
+                 
+                <div class="form-group">
+                     
+                        <label for="slug">Tahun Lulus</label>
+                          <select name="tahun_lulus" class="form-control">
+                        
+                          
+                          <option value="">Pilih Tahun Lulus</option>
+                              
+                              <option value="2021">2021</option>
+                              <option value="2022">2022</option>
+
+                          </select>
+                      
+                      </div>
                 <div class="form-group">
                      
                         <label for="slug">Jenis Kelamin</label>

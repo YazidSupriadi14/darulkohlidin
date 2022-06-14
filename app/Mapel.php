@@ -7,11 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Mapel extends Model
 {
     //
-    protected $table = 'nilai_mapel';
-    protected $fillable = ['id','agama','pkn','bahasa_indonesia','mtk','sejarah','bahasa_inggris',
-    'seni_budaya','pjok','prkw','bahasa_sunda','mtk_peminatan','biologi','fisika','kimia','bahasa_arab','siswa_id'];
-   
-    public function siswa(){
-    	return $this->belongsTo(Siswa::class);
+
+    protected $table = 'mapel';
+
+    protected $fillable = ['id','nama_mapel','kkm'];
+
+    public function nilai_mapel(){
+    	return $this->hasMany(NilaiMapel::class);
     }
+
+
 }

@@ -11,6 +11,12 @@
   <link rel="shortcut icon" href="{{url('image/darulkholidinlogo.png')}}" type="image/x-icon">
   <title>Darul Kholidin</title>
 
+  <style>
+    body{
+      background-color:#ffffff;
+    }
+  </style>
+
   @include('includes.admin.style')
 
 </head>

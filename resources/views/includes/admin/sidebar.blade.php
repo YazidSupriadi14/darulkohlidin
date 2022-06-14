@@ -26,6 +26,13 @@
           <i class="fas fa-fw fa-money-check"></i>
           <span>Info Kelulusan SMA</span></a>
       </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url('sma/mapel')}}">
+          <i class="fas fa-fw fa-book"></i>
+          <span>Daftar Mata Pelajaran</span></a>
+      </li>
+     
      
       <li class="nav-item active">
         <a class="nav-link" href="{{url('admin/user')}}">

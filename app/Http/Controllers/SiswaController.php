@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Siswa;
+use App\Administrasi;
 use DB;
 class SiswaController extends Controller
 {
@@ -24,7 +25,8 @@ class SiswaController extends Controller
     
     public function detaillulus($id){
         $siswa = Siswa::find($id);
-        return view('infodetaillulus',compact('siswa'));
+        $administrasi = Administrasi::where('siswa_id','=',$id)->get();
+        return view('infodetaillulus',compact('siswa','administrasi'));
 
     }
 }

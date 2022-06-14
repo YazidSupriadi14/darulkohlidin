@@ -11,11 +11,13 @@
   <link rel="shortcut icon" href="{{url('image/darulkholidinlogo.png')}}" type="image/x-icon">
   <title>Darul Kholidin</title>
 
+  
+
   @include('includes.admin.style')
 
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background-color:white;">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -32,7 +34,7 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid" style='background-color:white;'>
 
           @yield('content')
 
