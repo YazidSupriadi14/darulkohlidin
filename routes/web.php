@@ -21,6 +21,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/sma/index', 'SmaController@index');
+Route::get('/smp/index', 'SmaController@indexsmp');
 Route::get('/sma/index/lulus/{tahunlulus}', 'SmaController@viewbytahunlulus');
 Route::get('/search', 'SmaController@search');
 Route::get('/search', 'SmaController@searchbyname');
@@ -35,6 +36,10 @@ Route::get('/sma/siswa/edit/{id}', 'SmaController@edit');
 Route::put('/sma/siswa/update/{id}', 'SmaController@update');
 Route::delete('/sma/siswa/delete/{id}', 'SmaController@delete');
 Route::delete('/sma/siswa/detail/mapel/delete/{id}','SmaController@mapeldelete');
+Route::post('/siswa/import_excel', 'SmaController@import_excel');
+
+
+
 
 //mapel
 Route::get('/sma/mapel', 'MapelController@index');

@@ -4,7 +4,11 @@
   
   <!-- Page Heading -->
           <div class="p-3 bg-success text-light">
-           <h1 class="display-6 text-center">Info Kelulusan SMA Darul Kholidin </h1>
+           <h1 class="display-6 text-center">Info Kelulusan @if($siswa->tingkat_pendidikan == 'SMA') SMA 
+            @else
+            SMP
+            @endif
+            Darul Kholidin </h1>
           </div>
           <!-- Content Row -->
           <div class="row">

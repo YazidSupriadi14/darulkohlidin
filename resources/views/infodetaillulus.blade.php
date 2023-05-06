@@ -6,8 +6,11 @@
 
   <div class="p-3 bg-success text-light">
         
-           <h1 class="display-6 text-center">Info Kelulusan Siswa Darul Kholidin Tahun Ajaran 2021/2022 </h1>
-          </div>
+  <h1 class="display-6 text-center">Info Kelulusan Siswa @if($siswa->tingkat_pendidikan == 'SMA') SMA 
+            @else
+            SMP
+            @endif
+            Darul Kholidin Tahun Ajaran 2022     </h1>     </div>
         
        
           <!-- Content Row -->

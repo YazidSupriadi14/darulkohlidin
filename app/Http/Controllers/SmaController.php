@@ -8,12 +8,14 @@ use App\Administrasi;
 use App\NilaiMapel;
 use App\Mapel;
 use DB;
+use App\Imports\SiswaImport;
+use Maatwebsite\Excel\Facades\Excel;
 class SmaController extends Controller
 {
     //
     public function index()
     {   
-        $siswas = Siswa::all();
+        $siswas = Siswa::where('tingkat_pendidikan','=','SMA')->get();
         return view('pages.admin.sma.index',compact('siswas'));
     }
     public function add()
@@ -111,4 +113,34 @@ class SmaController extends Controller
         Administrasi::where('id',$id)->update(['status_lunas' => $change_status]);
         return redirect()->back();
     }
+
+    public function indexsmp(){
+        $siswas = Siswa::where('tingkat_pendidikan','=','SMP')->get();
+        return view('pages.admin.smp.index',compact('siswas'));
+    }
+
+    public function import_excel(Request $request) 
+	{
+		// validasi
+		$this->validate($request, [
+			'file' => 'required|mimes:csv,xls,xlsx'
+		]);
+ 
+		// menangkap file excel
+		$file = $request->file('file');
+ 
+		// membuat nama file unik
+		$nama_file = rand().$file->getClientOriginalName();
+ 
+		// upload ke folder file_siswa di dalam folder public
+		$file->move('file_siswa',$nama_file);
+ 
+		// import data
+		Excel::import(new SiswaImport, public_path('/file_siswa/'.$nama_file));
+ 
+
+ 
+		// alihkan halaman kembali
+		return redirect('/sma/index');
+	}
 }

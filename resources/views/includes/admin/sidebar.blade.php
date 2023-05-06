@@ -28,6 +28,12 @@
       </li>
 
       <li class="nav-item active">
+        <a class="nav-link" href="{{url('smp/index')}}">
+          <i class="fas fa-fw fa-money-check"></i>
+          <span>Info Kelulusan SMP</span></a>
+      </li>
+
+      <li class="nav-item active">
         <a class="nav-link" href="{{url('sma/mapel')}}">
           <i class="fas fa-fw fa-book"></i>
           <span>Daftar Mata Pelajaran</span></a>

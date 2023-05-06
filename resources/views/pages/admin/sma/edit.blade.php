@@ -34,7 +34,18 @@
                   <label>NIS</label>
                   <input type="text" class="form-control" name="nis" placeholder="Masukan Nomor NIS" value="{{$siswa->nis}}">
                 </div>
-                
+                <label>Jenjang pendidikan</label>
+                      <div class="form-check">
+        <input class="form-check-input" type="radio" name="tingkat_pendidikan"value="SMA"  id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+SMA        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="tingkat_pendidikan"value="SMP" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          SMP 
+               </label>
+      </div>
                 <div class="form-group">
                   <label>NO SKL</label>
                   <input type="text" class="form-control" name="noskl" placeholder="Masukan Nomor SKL Siswa" value="{{$siswa->noskl}}">
@@ -73,7 +84,7 @@
                           <option value="">Pilih Status Kelulusan</option>
                               
                               <option value="lulus">Lulus</option>
-                              <option value="tidak lulus">Lulus</option>
+                              <option value="tidak lulus">Tidak Lulus</option>
 
                           </select>
                       

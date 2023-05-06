@@ -29,6 +29,18 @@
                   <label>NISN</label>
                   <input type="text" class="form-control" name="nisn" placeholder="Masukan Nomor NISN" value="{{old('nisn')}}">
                 </div>
+                <label>Jenjang pendidikan</label>
+                      <div class="form-check">
+        <input class="form-check-input" type="radio" name="tingkat_pendidikan"value="SMA"  id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+SMA        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="tingkat_pendidikan"value="SMP" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          SMP 
+               </label>
+      </div>
                 <div class="form-group">
                   <label>NIS</label>
                   <input type="text" class="form-control" name="nis" placeholder="Masukan Nomor NIS" value="{{old('nis')}}">
